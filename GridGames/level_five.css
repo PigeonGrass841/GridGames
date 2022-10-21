@@ -1,14 +1,31 @@
 .container {
   display: grid;
-  /* Style rows and columns */
+  grid-template-columns: repeat(auto, minmax(100px, 1fr));
 }
 
 #title {
-  grid-column: /*this should span the entire page, look into using negative numbers in grid-column-end*/;
+  grid-column-start: -1/*this should span the entire page, look into using negative numbers in grid-column-end*/;
+  grid-column-end: 1;
+}
+
+.siblings {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.uncles {
+  grid-column: span 1;
+  grid-row: span 2
+}
+
+.grandparents {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .friend {
-
+  grid-column: span 1;
+  grid-row: span 1
 }
 
 /* Style other types of family members below*/

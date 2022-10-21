@@ -1,25 +1,54 @@
 .container {
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 10fr 1fr;
 }
 
 #navbar {
-
+  grid-column: span 5;
 }
 
 #sidebar {
   writing-mode: vertical-rl;
-
+  grid-row: span 2;
 }
 
 #title {
-
+  grid-column: span 4;
 }
 
-
 #content {
-
+  grid-column: span 4;
 }
 
 #footer {
+  grid-column: span 5;
+}
 
+#container4 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 10fr 1fr;
+  /* Style rows and columns */
+}
+
+#navbar4 {
+  grid-column: span 2;
+}
+
+#sidebar4 {
+  writing-mode: vertical-rl;
+  grid-row: span 2;
+}
+
+#title4 {
+  grid-column: span 1;
+}
+
+#content4 {
+  grid-column: span 1;
+}
+
+#footer4 {
+  grid-column: span 2;
 }

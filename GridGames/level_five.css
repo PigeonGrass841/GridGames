@@ -1,6 +1,8 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  height: 200px;
 }
 
 #title {
@@ -10,12 +12,11 @@
 
 .siblings {
   grid-column: span 2;
-  grid-row: span 1;
 }
 
 .uncles {
   grid-column: span 1;
-  grid-row: span 2
+  grid-row: span 2;
 }
 
 .grandparents {
@@ -25,7 +26,7 @@
 
 .friend {
   grid-column: span 1;
-  grid-row: span 1
+  grid-row: span 1;
 }
 
 /* Style other types of family members below*/
